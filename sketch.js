@@ -26,13 +26,17 @@ function draw() {
     //after setting up the circle with createVector function setup, use d for diameter to create
     // the placeholder variable for diameter
     //initially the diameter was set to 16 but what we want to do is create an illusion of 3D
-    // if the z value is keeping track of a pretend number as if the circle is actually leaving the screen and coming towards me
-
-    let d = map(star.z, 0, 400, 1, 10); 
+    // if the z value is keeping track of a pretend number as if the circle is actually leaving the screen and coming towards me, the bigger it gets the closer it gets
+    //to do that use the map() function - will take any given value that has some range to it
     
+    
+    let d = map(star.z, 0, 400, 1, 10); // mapping the star's z value has a range between 0 and 400 and then the diameter when it's at zero will be just one
+    //and then as it gets closer and closer to the viewer, it gets bigger (10)
+
     // call the new star variable with it's createVector function/value and placing this at x and y
     circle(star.x, star.y, d); 
 
+    //after the previous set up, write some code that has just the z value increase 
     star.z += 10; 
 
 
