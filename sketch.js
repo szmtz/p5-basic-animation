@@ -36,7 +36,9 @@ function draw() {
     // call the new star variable with it's createVector function/value and placing this at x and y
     circle(star.x, star.y, d); 
 
-    //after the previous set up, write some code that has just the z value increase 
+    //after the previous set up, write some code that has just the z value increase - initial basic animation of circle just growing star.z +=10; 
+
+    
     star.z += 10; 
 
 
